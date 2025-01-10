@@ -42,7 +42,7 @@ function LoanForm() {
   };
 
   return (
-    <div className="lg:grid lg:grid-cols-2 px-3 pb-3 lg:px-8 lg:pb-8">
+    <div className="lg:grid lg:grid-cols-2 px-3 lg:gap-4 pb-3 lg:px-8 lg:pb-8">
       <div className="hidden lg:grid grid-rows-3">
         <div className="row-span-1 flex items-center justify-center">
           {result ? (
