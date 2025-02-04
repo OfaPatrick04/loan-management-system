@@ -3,7 +3,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://loan-management-system-frontend.vercel.app"}})
 
 # Loan evaluation logic
 def evaluate_loan(data):
