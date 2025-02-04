@@ -28,7 +28,7 @@ function LoanForm() {
   const handleSubmit = async (e) => {
     toast.loading("Processing...", { id: "process" });
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/evaluate-loan", {
+    const response = await fetch("https://loan-management-system-backend.vercel.app/api/evaluate-loan", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
